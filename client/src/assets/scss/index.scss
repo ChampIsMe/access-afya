@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f4f6f8;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+}
+
+button:focus {
+  outline: none !important;
+}
+.textarea {
+  padding: 8px;
+  border: 1px solid lightgrey;
+  font-family: inherit;
+}
+.text-input:focus {
+  outline: 1px solid #aaa;
+}
+
+.playgroundBody .content {
+  display: none;
+}
+
