@@ -55,25 +55,6 @@ const Footer = props => {
           orientation="vertical"
         />
         <div>
-          {/*<Typography
-            align="left"
-            component="h4"
-            variant="subtitle2"
-          >
-            +254734339840 <br/> 3rd Floor, Orbit Place Westlands
-          </Typography>*/}
-          {/*<Typography
-            align="left"
-            variant="body1"
-          >
-            <Link
-              component="a"
-              href="https://google.com/"
-              target="_blank"
-            ><br />
-              View on Map
-            </Link>
-          </Typography>*/}
         </div>
       </div>
 

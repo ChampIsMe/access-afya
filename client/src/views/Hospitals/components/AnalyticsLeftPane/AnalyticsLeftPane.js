@@ -22,16 +22,6 @@ const useStyles = makeStyles(theme => ({
   content: {
     padding: 0
   },
-  image: {
-    height: 48,
-    width: 48
-  },
-  actions: {
-    justifyContent: 'flex-end'
-  },
-  status: {
-    marginRight: theme.spacing(1)
-  },
   statusContainer: {
     display: 'flex',
     alignItems: 'center'
@@ -59,7 +49,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const StationLeftPane = ({hospitals, selectedIndex, handleListItemClick}) => {
+const AnalyticsLeftPane = ({hospitals, selectedIndex, handleListItemClick}) => {
   const classes = useStyles()
   return (
     <Card
@@ -102,4 +92,4 @@ const StationLeftPane = ({hospitals, selectedIndex, handleListItemClick}) => {
   )
 }
 
-export default StationLeftPane
+export default AnalyticsLeftPane

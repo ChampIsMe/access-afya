@@ -43,48 +43,6 @@ const Routes = () => {
       <RouteWithLayout
         component={NotFoundView}
         exact
-        layout={MainLayout}
-        path="/roles"
-      />
-      <RouteWithLayout
-        component={NotFoundView}
-        exact
-        layout={MainLayout}
-        path="/users"
-      />
-      <RouteWithLayout
-        component={NotFoundView}
-        exact
-        layout={MainLayout}
-        path="/typography"
-      />
-      <RouteWithLayout
-        component={NotFoundView}
-        exact
-        layout={MainLayout}
-        path="/account"
-      />
-      <RouteWithLayout
-        component={NotFoundView}
-        exact
-        layout={MainLayout}
-        path="/settings"
-      />
-      <RouteWithLayout
-        component={NotFoundView}
-        exact
-        layout={MinimalLayout}
-        path="/sign-up"
-      />
-      <RouteWithLayout
-        component={NotFoundView}
-        exact
-        layout={MinimalLayout}
-        path="/sign-in"
-      />
-      <RouteWithLayout
-        component={NotFoundView}
-        exact
         layout={MinimalLayout}
         path="/not-found"
       />

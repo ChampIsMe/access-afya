@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 0,
     paddingBottom: 0
   },
-  issueItems: {
+  pageItems: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center', justifyContent: 'flex-end', alignContent: 'center',
@@ -74,15 +74,6 @@ const useStyles = makeStyles(theme => ({
     },
   },
 }))
-
-const CustomRouterLink = forwardRef((props, ref) => (
-  <div
-    ref={ref}
-    style={{flexGrow: 1}}
-  >
-    <RouterLink {...props} />
-  </div>
-))
 
 const SidebarNav = props => {
   const {pages, className, ...rest} = props
@@ -105,7 +96,7 @@ const SidebarNav = props => {
     >
       {pages.map((page, index) =>
         (
-          <div className={classes.issueItems} onClick={() => changeSelectedMenu(index, page.href)}>
+          <div className={classes.pageItems} onClick={() => changeSelectedMenu(index, page.href)}>
             <Icon style={{marginRight: theme.spacing(1), colorAction: theme.palette.grey[200]}}
                   edge="end"
                   fontSize="large"
@@ -114,21 +105,6 @@ const SidebarNav = props => {
               {page.icon}
             </Icon>
           </div>
-          /*<ListItem
-            className={classes.item}
-            disableGutters
-            key={index}
-          >
-            <IconButton
-              activeClassName={classes.active}
-              className={classes.button}
-              component={CustomRouterLink}
-              to={page.href} size={'medium'}
-            >
-              {page.icon}
-            </IconButton>
-          </ListItem>*/
-
         ))}
     </div>
   )

@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import {makeStyles} from '@material-ui/styles'
 import {Grid} from '@material-ui/core'
 
-import {KeyIssues, StationLeftPane} from './components'
+import {AnalyticsRightPane, AnalyticsLeftPane} from './components'
 import StationsToBar from './components/StationsToBar'
 import Divider from "@material-ui/core/Divider"
 import {useSelector} from "react-redux"
@@ -43,7 +43,7 @@ const Hospitals = () => {
             xl={2}
             xs={12}
           >
-            <StationLeftPane handleListItemClick={handleListItemClick} hospitals={hospitals}
+            <AnalyticsLeftPane handleListItemClick={handleListItemClick} hospitals={hospitals}
                              selectedIndex={selectedIndex}/>
           </Grid>
           {(selectedIndex > -1) && (<Grid
@@ -52,7 +52,7 @@ const Hospitals = () => {
             md={10}
             xl={10}
             xs={12}>
-            <KeyIssues hospital={hospital} times={times} selectedIndex={selectedIndex}/>
+            <AnalyticsRightPane hospital={hospital} times={times} selectedIndex={selectedIndex}/>
           </Grid>)}
 
 
